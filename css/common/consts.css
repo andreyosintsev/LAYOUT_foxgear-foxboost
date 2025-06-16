@@ -15,6 +15,7 @@
 /*
     Основная палитра
 */
+    
     --black:                    #000000; /* main text */
     --gray:                     #666666; /* to collect */
     --gray-light:               #D9D9D9; /* button outlined hover */
@@ -48,13 +49,14 @@
 /*
     Рамки
 */
-
+    --border-color:                 #D9D9D9;
     --border-radius:                10px;
     --border-radius_mobile:         5px;
 
 /*
     Ссылки
 */
+    
     --link-normal-color:            var(--blue, #403080);
     --link-normal-color_hover:      var(--purple, #9B8FCC);
     --link-normal-color_disabled:   var(--gray, #666666);
@@ -69,5 +71,5 @@
     --button-normal-background-color:          var(--blue, #403080);
     --button-normal-background-color_hover:    var(--purple, #9B8FCC);
     --button-normal-background-color_disabled: var(--gray, #666666);
-    
+
 }
