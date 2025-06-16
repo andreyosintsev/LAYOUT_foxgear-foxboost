@@ -1,0 +1,13 @@
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;  
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+    height: 8px
+}
