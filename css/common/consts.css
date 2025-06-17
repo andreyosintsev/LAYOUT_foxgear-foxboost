@@ -35,7 +35,12 @@
     --text-color-main:          var(--black, #000000);
     --text-family:              'Inter', arial, sans-serif;
     --text-size-main:           14px;
+    
+    --text-weight-light:        300;
     --text-weight-main:         400;
+    --text-weight-bold:         700;
+    --text-weight-extrabold:    800;
+    --text-weight-black:        900;
 
     --text-line-height:         150%;
 
@@ -60,6 +65,14 @@
     --link-normal-color:            var(--blue, #403080);
     --link-normal-color_hover:      var(--purple, #9B8FCC);
     --link-normal-color_disabled:   var(--gray, #666666);
+
+    --link-light-color:             var(--white, #FFFFFF);
+    --link-light-color_hover:       var(--white, #FFFFFF);
+    --link-light-color_disabled:    var(--gray, #666666);
+
+    --link-special-color:            var(--black, #000000); /* header top */
+    --link-special-color_hover:      var(--black, #000000);
+    --link-special-color_disabled:   var(--gray, #666666);
 
 /*
     Кнопки
