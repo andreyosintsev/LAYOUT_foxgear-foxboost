@@ -1,8 +1,22 @@
 .title {
+    position: relative;
     display: inline-block;
 
     margin: 0;
-    padding: 0;
+    padding: 0 0 4px 0;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+
+  background-color: #403080;
+
+  background: linear-gradient(to right, #403080, #E31023);
 }
 
 .title__header {
@@ -16,33 +30,22 @@
     text-transform: uppercase;
 }
 
-.title__rectangle {
-    width: 100%;
-    height: 5px;
-
-    background-color: #403080;
-
-    @supports(background: linear-gradient(90deg, #000 0%, #000 100%)) {
-        background: linear-gradient(90deg, #403080 0%, #E31023 100%);
-    }
-}
-
 @media screen and (max-width: 1440px) {
+    .title::after {
+        height: 4px;
+    }
+
     .title__header {
         font-size: 24px;
-    }
-
-    .title__rectangle {
-        height: 4px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .title__header {
-        font-size: 16px;
+    .title::after {
+        height: 4px;
     }
 
-    .title__rectangle {
-        height: 3px;
+    .title__header {
+        font-size: 16px;
     }
 }
