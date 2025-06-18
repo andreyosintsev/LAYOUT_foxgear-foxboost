@@ -11,7 +11,10 @@
 <body style="background-color: lime;">
     <div class="logo">
         <a class="logo__link" href="index.html">
-            <img class="logo__image" src="../../images/logo.svg" alt="На главную страницу">
+            <picture>
+                <source srcset="../../images/logo-mobile.svg" media="(max-width: 768px)">
+                <img src="../../images/logo.svg" alt="Компания" class="logo__image" alt="На главную страницу">
+            </picture>
         </a>
     </div>
 </body>
