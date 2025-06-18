@@ -1,9 +1,15 @@
 .title {
     position: relative;
     display: inline-block;
-
     margin: 0;
     padding: 0 0 4px 0;
+
+    color: var(--gray-dark, #333333);
+    font-family: var(--text-family, sans-serif);
+    font-size: 30px;
+    font-weight: var(--font-weight-bold, 700);
+
+    text-transform: uppercase;
 }
 
 .title::after {
@@ -19,33 +25,22 @@
   background: linear-gradient(to right, #403080, #E31023);
 }
 
-.title__header {
-    margin: 0;
-
-    color: var(--gray-dark, #333333);
-    font-family: var(--text-family, sans-serif);
-    font-size: 30px;
-    font-weight: var(--font-weight-bold, 700);
-
-    text-transform: uppercase;
-}
-
 @media screen and (max-width: 1440px) {
-    .title::after {
-        height: 4px;
+    .title {
+        font-size: 24px;
     }
 
-    .title__header {
-        font-size: 24px;
+    .title::after {
+        height: 4px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .title::after {
-        height: 4px;
+    .title {
+        font-size: 16px;
     }
 
-    .title__header {
-        font-size: 16px;
+    .title::after {
+        height: 3px;
     }
 }
