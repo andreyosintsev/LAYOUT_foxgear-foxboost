@@ -1,6 +1,6 @@
 .card-stats {
     display: block;
-    padding: 10px 0 14px;
+    padding: 10px 5px 14px;
 
     font-family: var(--text-family, sans-serif);
 
@@ -49,7 +49,7 @@
 
 @media screen and (max-width: 768px) {
     .card-stats {
-        padding: 5px 0;
+        padding: 5px;
 
         border-radius: var(--border-radius_mobile, 5px);
     }
