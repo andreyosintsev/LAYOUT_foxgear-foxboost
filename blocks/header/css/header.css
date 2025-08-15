@@ -43,15 +43,15 @@
 
 @media screen and (max-width: 1440px) {
     .header__logo {
-       width: 146px;
+        width: 146px;
     }
 
     .header__search {
-       margin: 0 30px;
+        margin: 0 30px;
     }
 
     .header__about {
-       font-size: 16px;
+        font-size: 16px;
     }
 }
 
@@ -61,15 +61,15 @@
     }
 
     .header__logo {
-       width: 25px;
+        width: 25px;
     }
 
     .header__search {
-       margin: 0 10px;
+        margin: 0 10px;
     }
 
     .header__about {
-       display: none;
+        display: none;
     }
 
     .button-menu-mobile {

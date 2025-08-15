@@ -3,87 +3,99 @@
 
 :root {
 
-/*
+    /*
     Размеры экрана
 */
 
-    --content-width_max:        1920px;
-    --content-width_desktop:    1440px;
-    --content-width_tablet:     768px;
-    --content-width_mobile:     360px;
+    --content-width_max: 1920px;
+    --content-width_desktop: 1440px;
+    --content-width_tablet: 768px;
+    --content-width_mobile: 360px;
 
-/*
+    /*
     Основная палитра
 */
 
-    --black:                    #000000; /* main text */
-    --gray-dark:                #333333; /* section title */
-    --gray:                     #666666; /* to collect */
-    --gray-light:               #D9D9D9; /* button outlined hover */
-    --off-white:                #FAFBFC; /* panel background */
-    --white:                    #FFFFFF; /* button background */
+    --black: #000000;
+    /* main text */
+    --gray-dark: #333333;
+    /* section title */
+    --gray: #666666;
+    /* to collect */
+    --gray-light: #D9D9D9;
+    /* button outlined hover */
+    --off-white: #FAFBFC;
+    /* panel background */
+    --white: #FFFFFF;
+    /* button background */
 
-    --blue:                     #403080; /* link, button */
-    --purple:                   #9B8FCC; /* link, button hover */
-    --red:                      #E31D23; /* form error */
-    --gold:                     #B6A817; /* rating stars */
-    --green:                    #1DE33B; /* form success, blue button hover */
+    --blue: #403080;
+    /* link, button */
+    --purple: #9B8FCC;
+    /* link, button hover */
+    --red: #E31D23;
+    /* form error */
+    --gold: #B6A817;
+    /* rating stars */
+    --green: #1DE33B;
+    /* form success, blue button hover */
 
-/*
+    /*
     Шрифты
 */
 
-    --text-color-main:          var(--black, #000000);
-    --text-family:              'Inter', arial, sans-serif;
-    --text-size-main:           14px;
+    --text-color-main: var(--black, #000000);
+    --text-family: 'Inter', arial, sans-serif;
+    --text-size-main: 14px;
 
-    --text-weight-light:        300;
-    --text-weight-main:         400;
-    --text-weight-bold:         700;
-    --text-weight-extrabold:    800;
-    --text-weight-black:        900;
+    --text-weight-light: 300;
+    --text-weight-main: 400;
+    --text-weight-bold: 700;
+    --text-weight-extrabold: 800;
+    --text-weight-black: 900;
 
-    --text-line-height:         150%;
+    --text-line-height: 150%;
 
-/*
+    /*
     Фоны
 */
 
-    --background-color-main:  var(--white, #FFFFFF);
+    --background-color-main: var(--white, #FFFFFF);
     --background-color-panel: var(--off-white, #FAFBFC);
 
-/*
+    /*
     Рамки
 */
-    --border-color:                 #D9D9D9;
-    --border-radius:                10px;
-    --border-radius_mobile:         5px;
+    --border-color: #D9D9D9;
+    --border-radius: 10px;
+    --border-radius_mobile: 5px;
 
-/*
+    /*
     Ссылки
 */
 
-    --link-normal-color:            var(--blue, #403080);
-    --link-normal-color_hover:      var(--purple, #9B8FCC);
-    --link-normal-color_disabled:   var(--gray, #666666);
+    --link-normal-color: var(--blue, #403080);
+    --link-normal-color_hover: var(--purple, #9B8FCC);
+    --link-normal-color_disabled: var(--gray, #666666);
 
-    --link-light-color:             var(--white, #FFFFFF);
-    --link-light-color_hover:       var(--white, #FFFFFF);
-    --link-light-color_disabled:    var(--gray, #666666);
+    --link-light-color: var(--white, #FFFFFF);
+    --link-light-color_hover: var(--white, #FFFFFF);
+    --link-light-color_disabled: var(--gray, #666666);
 
-    --link-special-color:            var(--black, #000000); /* header top */
-    --link-special-color_hover:      var(--black, #000000);
-    --link-special-color_disabled:   var(--gray, #666666);
+    --link-special-color: var(--black, #000000);
+    /* header top */
+    --link-special-color_hover: var(--black, #000000);
+    --link-special-color_disabled: var(--gray, #666666);
 
-/*
+    /*
     Кнопки
 */
 
-    --button-normal-color:                     var(--white, #FFFFFF);
-    --button-normal-color_hover:               var(--white, #FFFFFF);
-    --button-normal-color_disabled:            var(--gray, #666666);
-    --button-normal-background-color:          var(--blue, #403080);
-    --button-normal-background-color_hover:    var(--purple, #9B8FCC);
+    --button-normal-color: var(--white, #FFFFFF);
+    --button-normal-color_hover: var(--white, #FFFFFF);
+    --button-normal-color_disabled: var(--gray, #666666);
+    --button-normal-background-color: var(--blue, #403080);
+    --button-normal-background-color_hover: var(--purple, #9B8FCC);
     --button-normal-background-color_disabled: var(--gray, #666666);
 
 }
