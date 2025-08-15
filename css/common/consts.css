@@ -5,7 +5,7 @@
 
     /*
     Размеры экрана
-*/
+    */
 
     --content-width_max: 1920px;
     --content-width_desktop: 1440px;
@@ -14,7 +14,7 @@
 
     /*
     Основная палитра
-*/
+    */
 
     --black: #000000;
     /* main text */
@@ -42,7 +42,7 @@
 
     /*
     Шрифты
-*/
+    */
 
     --text-color-main: var(--black, #000000);
     --text-family: 'Inter', arial, sans-serif;
@@ -50,6 +50,7 @@
 
     --text-weight-light: 300;
     --text-weight-main: 400;
+    --text-weight-semibold: 600;
     --text-weight-bold: 700;
     --text-weight-extrabold: 800;
     --text-weight-black: 900;
@@ -58,21 +59,21 @@
 
     /*
     Фоны
-*/
+    */
 
     --background-color-main: var(--white, #FFFFFF);
     --background-color-panel: var(--off-white, #FAFBFC);
 
     /*
     Рамки
-*/
+    */
     --border-color: #D9D9D9;
     --border-radius: 10px;
     --border-radius_mobile: 5px;
 
     /*
     Ссылки
-*/
+    */
 
     --link-normal-color: var(--blue, #403080);
     --link-normal-color_hover: var(--purple, #9B8FCC);
@@ -89,7 +90,7 @@
 
     /*
     Кнопки
-*/
+    */
 
     --button-normal-color: var(--white, #FFFFFF);
     --button-normal-color_hover: var(--white, #FFFFFF);
