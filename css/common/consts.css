@@ -97,6 +97,6 @@
     --button-normal-color_disabled: var(--gray, #666666);
     --button-normal-background-color: var(--blue, #403080);
     --button-normal-background-color_hover: var(--purple, #9B8FCC);
-    --button-normal-background-color_disabled: var(--gray, #666666);
+    --button-normal-background-color_disabled: #CCCCCC;
 
 }
