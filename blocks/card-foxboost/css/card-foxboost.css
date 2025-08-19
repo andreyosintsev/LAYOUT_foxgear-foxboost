@@ -123,7 +123,7 @@
     -webkit-line-clamp: 3;
     line-clamp: 3;
     height: 65px;
-    padding-bottom: 5px;
+    margin-bottom: 6px;
 
     color: var(--gray, #666666);
     font-size: 14px;
