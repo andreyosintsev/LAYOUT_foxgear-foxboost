@@ -2,11 +2,7 @@ $(document).ready(function () {
     const $carousels = $(".section-foxboost");
 
     function initCarousel($carousel) {
-        if (
-            $(window).width() < 1440 &&
-            $(window).width() >= 480 &&
-            !$carousel.data("carousel-initialized")
-        ) {
+        if ($(window).width() <= 1440 && $(window).width() >= 480 && !$carousel.data("carousel-initialized")) {
             $carousel.addClass("owl-carousel owl-theme").owlCarousel({
                 items: 1.5,
                 loop: true,
@@ -16,10 +12,10 @@ $(document).ready(function () {
                 center: false,
                 pullDrag: true,
                 responsive: {
-                    600: {
+                    640: {
                         items: 2.5,
                     },
-                    834: {
+                    1000: {
                         items: 3.5,
                     },
                 },
@@ -29,11 +25,9 @@ $(document).ready(function () {
     }
 
     function destroyCarousel($carousel) {
-        if ($(window).width() >= 1440 || $(window).width() < 480) {
+        if ($(window).width() > 1440 || $(window).width() < 480) {
             if ($carousel.data("carousel-initialized")) {
-                $carousel
-                    .trigger("destroy.owl.carousel")
-                    .removeClass("owl-carousel owl-theme");
+                $carousel.trigger("destroy.owl.carousel").removeClass("owl-carousel owl-theme");
                 $carousel.data("carousel-initialized", false);
             }
         }

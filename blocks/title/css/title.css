@@ -2,12 +2,14 @@
     position: relative;
     display: inline-block;
     margin: 0;
-    padding: 0 0 4px 0;
+    padding: 0 0 6px 0;
 
     color: var(--gray-dark, #333333);
     font-family: var(--text-family, sans-serif);
     font-size: 30px;
-    font-weight: var(--font-weight-bold, 700);
+    font-weight: var(--text-weight-bold, 700);
+
+    line-height: 32px;
 
     text-transform: uppercase;
 }
@@ -28,6 +30,8 @@
 @media screen and (max-width: 1440px) {
     .title {
         font-size: 24px;
+
+        line-height: 24px;
     }
 
     .title::after {
@@ -38,6 +42,8 @@
 @media screen and (max-width: 768px) {
     .title {
         font-size: 16px;
+
+        line-height: 15px;
     }
 
     .title::after {

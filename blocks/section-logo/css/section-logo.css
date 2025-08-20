@@ -1,15 +1,11 @@
-* {
-    outline: 1px solid #aaa;
-}
-
-.section-logos {
+.section-logo {
     display: block;
     width: 100%;
     margin: 0;
     padding: 10px 30px;
 }
 
-.section-logos__items {
+.section-logo__items {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -21,28 +17,28 @@
     list-style: none;
 }
 
-.section-logos__item {
+.section-logo__item {
     width: 130px;
     height: 100px;
 }
 
 @media screen and (max-width: 1440px) {
-    .section-logos {
+    .section-logo {
         padding: 40px 0;
     }
 
-    .section-logos__item {
+    .section-logo__item {
         width: 98px;
         height: 75px;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .section-logos {
-        padding: 10px 0;
+@media screen and (max-width: 768px) {
+    .section-logo {
+        padding: 11px 0;
     }
 
-    .section-logos__item {
+    .section-logo__item {
         width: 50px;
         height: 38px;
     }

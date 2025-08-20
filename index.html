@@ -1,531 +1,649 @@
 <!DOCTYPE html>
-< lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foxboost - будь в числе первых обладателей новинок</title>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Foxboost - будь в числе первых обладателей новинок</title>
 
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-    <link rel="manifest" href="favicons/site.webmanifest">
-    <meta name="apple-mobile-web-app-title" content="FoxGear NuPhy">
-    
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png" />
+        <link rel="manifest" href="favicons/site.webmanifest" />
+        <meta name="apple-mobile-web-app-title" content="FoxGear NuPhy" />
 
-    <link rel="stylesheet" href="css/common/normalize.css">
-    <link rel="stylesheet" href="css/common/consts.css">
-    <!--link rel="stylesheet" href="css/common/animate.min.css">
-    <link rel="stylesheet" href="css/common/owl.carousel.min.css" >
-    <link rel="stylesheet" href="css/common/owl.theme.default.min.css" >
-    <link rel="stylesheet" href="blocks/header/css/header.css">
-    <link rel="stylesheet" href="blocks/menu-mobile/css/menu-mobile.css">
-    <link rel="stylesheet" href="blocks/hero-slider/css/hero-slider.css">
-    <link rel="stylesheet" href="blocks/button/css/button.css">
-    <link rel="stylesheet" href="blocks/section-title/css/section-title.css">
-    <link rel="stylesheet" href="blocks/rating/css/rating.css">
-    <link rel="stylesheet" href="blocks/card-product/css/card-product.css">
-    <link rel="stylesheet" href="blocks/products/css/products.css">
-    <link rel="stylesheet" href="blocks/card-publication/css/card-publication.css">
-    <link rel="stylesheet" href="blocks/contacts/css/contacts.css">
-    <link rel="stylesheet" href="blocks/footer/css/footer.css">
-    <link rel="stylesheet" href="blocks/back-to-top/css/back-to-top.css"-->
-    <link rel="stylesheet" href="css/pages/index.css">
-</head>
-<body>
-    <div class="hero">
-        <div class="wrapper">
+        <link rel="stylesheet" href="css/common/normalize.css" />
+        <link rel="stylesheet" href="css/common/consts.css" />
+        <link rel="stylesheet" href="css/common/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/common/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="blocks/wrapper/css/wrapper.css" />
+        <link rel="stylesheet" href="blocks/logo/css/logo.css" />
+        <link rel="stylesheet" href="blocks/input/css/input.css" />
+        <link rel="stylesheet" href="blocks/input-search/css/input-search.css" />
+        <link rel="stylesheet" href="blocks/link/css/link.css" />
+        <link rel="stylesheet" href="blocks/button-menu-mobile/css/button-menu-mobile.css" />
+        <link rel="stylesheet" href="blocks/menu-main/css/menu-main.css" />
+        <link rel="stylesheet" href="blocks/header/css/header.css" />
+        <link rel="stylesheet" href="blocks/motto/css/motto.css" />
+        <link rel="stylesheet" href="blocks/card-stats/css/card-stats.css" />
+        <link rel="stylesheet" href="blocks/panel-stats/css/panel-stats.css" />
+        <link rel="stylesheet" href="blocks/section-logo/css/section-logo.css" />
+        <link rel="stylesheet" href="blocks/slider-hero/css/slider-hero.css" />
+        <link rel="stylesheet" href="blocks/button/css/button.css" />
+        <link rel="stylesheet" href="blocks/card-foxboost/css/card-foxboost.css" />
+        <link rel="stylesheet" href="blocks/section-foxboost/css/section-foxboost.css" />
+        <link rel="stylesheet" href="blocks/title/css/title.css" />
+        <link rel="stylesheet" href="blocks/card-ambassador/css/card-ambassador.css" />
+        <link rel="stylesheet" href="blocks/section-ambassador/css/section-ambassador.css" />
+        <link rel="stylesheet" href="blocks/textarea/css/textarea.css" />
+        <link rel="stylesheet" href="blocks/contacts/css/contacts.css" />
+        <link rel="stylesheet" href="blocks/back-to-top/css/back-to-top.css" />
+        <link rel="stylesheet" href="blocks/footer/css/footer.css" />
+        <link rel="stylesheet" href="css/pages/index.css" />
+    </head>
+    <body>
+        <div class="hero">
             <header class="header">
-                <div class="top">
-                    
+                <div class="header__top">
+                    <div class="logo header__logo">
+                        <a class="logo__link" href="index.html">
+                            <picture>
+                                <source srcset="images/logo-mobile.svg" media="(max-width: 768px)" />
+                                <img class="logo__image" src="images/logo.svg" alt="На главную страницу" />
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="input-search header__search">
+                        <input class="input input-search__input" type="text" placeholder="Поиск по названию" />
+                        <svg class="input-search__icon" viewBox="0 0 25 24">
+                            <path
+                                d="M22.7521 2.22438C21.3175 0.789641 19.4109 0 17.3819 0C15.3534 0 13.4461 0.789832 12.0116 2.22438C9.40658 4.82919 9.09461 8.87102 11.0726 11.8219L10.9319 11.9623C10.5389 12.3559 10.4361 12.9313 10.6232 13.4214L9.20121 14.8432L9.0376 14.68C8.96571 14.6081 8.85072 14.6062 8.77636 14.676L1.37917 21.6334C0.837803 22.175 0.837803 23.056 1.37917 23.5973C1.64175 23.8597 1.98994 24.0044 2.36121 24.0044C2.73172 24.0044 3.0803 23.8597 3.34669 23.5933L10.3007 16.2001C10.3699 16.1261 10.3682 16.0104 10.2967 15.9389L10.1329 15.7753L11.5551 14.3537C11.7126 14.4136 11.8789 14.445 12.0449 14.445C12.396 14.445 12.7471 14.3119 13.014 14.0446L13.153 13.9054C14.3937 14.7406 15.853 15.1897 17.3819 15.1897C19.4109 15.1897 21.3176 14.3995 22.7521 12.9651C25.7135 10.0037 25.7135 5.18539 22.7521 2.22438ZM21.4282 11.6406C20.3473 12.7208 18.9103 13.3163 17.3819 13.3163C15.8534 13.3163 14.4163 12.7208 13.3359 11.6406C11.1049 9.4099 11.1049 5.77958 13.3359 3.54852C14.4163 2.46751 15.8534 1.87275 17.3823 1.87275C18.9107 1.87275 20.3477 2.46751 21.4282 3.54814C23.6594 5.77881 23.6594 9.40914 21.4282 11.6406Z"
+                                fill="#666666"
+                            />
+                        </svg>
+                    </div>
+                    <a href="#" class="link header__about link_special">Как это работает</a>
+                    <div class="button-menu-mobile">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="2" x2="26" y2="2" stroke="black" stroke-width="2" />
+                            <line y1="12" x2="26" y2="12" stroke="black" stroke-width="2" />
+                            <path d="M0 23H30" stroke="black" stroke-width="2" />
+                        </svg>
+                    </div>
                 </div>
-                <nav class="menu-main">
-                    
+                <nav class="menu-main header__menu-main" aria-label="Главное меню">
+                    <ul class="menu-main__items">
+                        <li class="menu-main__item">
+                            <a class="menu-main__link" href="#" title="Компьютерные столы" aria-label="Компьютерные столы">
+                                Компьютерные столы
+                            </a>
+                        </li>
+                        <li class="menu-main__item menu-main__item_current">
+                            <a class="menu-main__link" href="#" title="Кресла" aria-label="Кресла">Кресла</a>
+                        </li>
+                        <li class="menu-main__item">
+                            <a class="menu-main__link" href="#" title="Клавиатуры" aria-label="Клавиатуры">Клавиатуры</a>
+                        </li>
+                        <li class="menu-main__item">
+                            <a class="menu-main__link" href="#" title="Столики" aria-label="Столики">Столики</a>
+                        </li>
+                        <li class="menu-main__item">
+                            <a class="menu-main__link" href="#" title="Аксессуары" aria-label="Аксессуары">Аксессуары</a>
+                        </li>
+                        <li class="menu-main__item">
+                            <a class="menu-main__link" href="#" title="Прочее" aria-label="Прочее">Прочее</a>
+                        </li>
+                    </ul>
                 </nav>
             </header>
-        </div>
-    </div>
-    <main class="main">
-        <div class="wrapper">
-
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="wrapper">
-
-        </div>
-    </footer>
-</body>
-
-
-    <header class="header">
-        <div class="wrapper header__wrapper">
-            <div class="logo header__logo">
-                <a class="logo__link" href="#" title="Клавиатуры NuPhy - главная страница">
-                    <img class="logo__image" 
-                        src="images/logo/logo.webp" 
-                        alt="Логотип NuPhy">
-                </a>
+            <div class="wrapper">
+                <div class="motto">Будь в числе первых обладателей новинок</div>
+                <div class="panel-stats">
+                    <div class="panel-stats_card card-stats">
+                        <div class="card-stats__value card-stats__value_blue">9</div>
+                        <div class="card-stats__description">Фоксбустов уже на сайте</div>
+                    </div>
+                    <div class="panel-stats_card card-stats">
+                        <div class="card-stats__value card-stats__value_purple">5</div>
+                        <div class="card-stats__description">Брендов ждут вас</div>
+                    </div>
+                    <div class="panel-stats_card card-stats">
+                        <div class="card-stats__value card-stats__value_red">&gt;50</div>
+                        <div class="card-stats__description">Довольных покупателей</div>
+                    </div>
+                </div>
+                <div class="section-logo">
+                    <ul class="section-logo__items">
+                        <li class="logo section-logo__item">
+                            <img class="logo__image" src="images/logos/eurekagaming.png" alt="Компания Eureka Gaming" />
+                        </li>
+                        <li class="logo section-logo__item">
+                            <img class="logo__image" src="images/logos/gunnar.png" alt="Компания Gunnar" />
+                        </li>
+                        <li class="logo section-logo__item">
+                            <img class="logo__image" src="images/logos/lenovo.png" alt="Компания Lenovo" />
+                        </li>
+                        <li class="logo section-logo__item">
+                            <img class="logo__image" src="images/logos/tfa.png" alt="Компания TFA" />
+                        </li>
+                        <li class="logo section-logo__item">
+                            <img class="logo__image" src="images/logos/xtrfy.jpg" alt="Компания XTRFY" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="slider-hero">
+                    <div class="slider-hero__cards owl-carousel owl-theme">
+                        <div class="slider-hero__card">
+                            <a class="slider-hero__link" href="#" title="FoxGear - кресла и аксессуары">
+                                <img class="slider-hero__image" src="images/slider-hero/01.jpg" alt="FoxGear - кресла и аксессуары" />
+                            </a>
+                        </div>
+                        <div class="slider-hero__card">
+                            <a class="slider-hero__link" href="#" title="FoxGear - кресла и аксессуары">
+                                <img class="slider-hero__image" src="images/slider-hero/02.jpg" alt="FoxGear - кресла и аксессуары" />
+                            </a>
+                        </div>
+                        <div class="slider-hero__card">
+                            <a class="slider-hero__link" href="#" title="FoxGear - кресла и аксессуары">
+                                <img class="slider-hero__image" src="images/slider-hero/03.jpg" alt="FoxGear - кресла и аксессуары" />
+                            </a>
+                        </div>
+                        <div class="slider-hero__card">
+                            <a class="slider-hero__link" href="#" title="FoxGear - кресла и аксессуары">
+                                <img class="slider-hero__image" src="images/slider-hero/04.jpg" alt="FoxGear - кресла и аксессуары" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <nav class="menu-main header__menu-main">
-                <ul class="menu-main__items">
-                    <li class="menu-main__item hidden">
-                        <a class="menu-main__link" href="keyboards.html" title="Клавиатуры NuPhy">
-                            Клавиатуры
-                        </a>
-                    </li>
-                    <li class="menu-main__item menu-main__item_dropdown">
-                        <a class="menu-main__link" href="keyboards-he.html" title="Клавиатуры HE">
-                            Клавиатуры с магнитными переключателями
-                        </a>
-                        <div class="menu-dropdown hidden">
-                            <ul class="menu-dropdown__items">
-                                <li class="menu-dropdown__item">
-                                    <a class="menu-dropdown__link" href="halo65-he.html" title="Клавиатура NuPhy Halo65 HE">
-                                        Клавиатура NuPhy Halo65 HE
+        </div>
+        <main class="main">
+            <div class="wrapper">
+                <section class="section">
+                    <h2 class="title">Популярные фоксбусты</h2>
+                    <div class="section-foxboost">
+                        <div class="card-foxboost section-foxboost__card">
+                            <div class="card-foxboost__caption">
+                                <div class="card-foxboost__image">
+                                    <a class="card-foxboost__link" href="#" title="Посмотреть кресло FoxGear NETZ model X">
+                                        <img
+                                            class="card-foxboost__img"
+                                            src="images/foxboosts/image.png"
+                                            alt="Кресло FoxGear NETZ model X "
+                                        />
                                     </a>
-                                </li>
-                                <li class="menu-dropdown__item">
-                                    <a class="menu-dropdown__link" href="air60-he.html" title="Клавиатура NuPhy Air60 HE">
-                                        Клавиатура NuPhy Air60 HE
+                                </div>
+                                <div class="card-foxboost__stats">
+                                    <div class="card-foxboost__togo-apps">1500 дней, 100000 заявок</div>
+                                    <div class="card-foxboost__views">15600</div>
+                                </div>
+                                <h3 class="card-foxboost__title">
+                                    <a class="card-foxboost__link" href="#" title="Посмотреть кресло FoxGear NETZ model X">
+                                        Кресло FoxGear NETZ model X белого, чёрного и серого цвета c регулировкой подъема
                                     </a>
+                                </h3>
+                            </div>
+                            <div class="card-foxboost__content">
+                                <div class="card-foxboost__description">
+                                    Комфортное настраиваемое офисное кресло для дома, предприятия, с отличной поддержкой поясницы и
+                                    регулировкой подъема
+                                </div>
+                                <div class="card-foxboost__rating">
+                                    <div class="card-foxboost__stars">
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star card-foxboost__star_gray"></span>
+                                    </div>
+                                    <div class="card-foxboost__average">4.6</div>
+                                    <div class="card-foxboost__reviews">12 оценок</div>
+                                </div>
+                                <a class="button card-foxboost__button">Оставить заявку</a>
+                            </div>
+                            <div class="card-foxboost__special card-foxboost__special_recommended"></div>
+                        </div>
+                        <div class="card-foxboost section-foxboost__card">
+                            <div class="card-foxboost__caption">
+                                <div class="card-foxboost__image">
+                                    <a class="card-foxboost__link" href="#" title="Посмотреть кресло FoxGear NETZ model X">
+                                        <img
+                                            class="card-foxboost__img"
+                                            src="images/foxboosts/image.png"
+                                            alt="Кресло FoxGear NETZ model X "
+                                        />
+                                    </a>
+                                </div>
+                                <div class="card-foxboost__stats">
+                                    <div class="card-foxboost__togo-apps">1500 дней, 100000 заявок</div>
+                                    <div class="card-foxboost__views">15600</div>
+                                </div>
+                                <h3 class="card-foxboost__title">
+                                    <a class="card-foxboost__link" href="#" title="Посмотреть кресло FoxGear NETZ model X">
+                                        Кресло FoxGear NETZ model X белого, чёрного и серого цвета c регулировкой подъема
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="card-foxboost__content">
+                                <div class="card-foxboost__description">
+                                    Комфортное настраиваемое офисное кресло для дома, предприятия, с отличной поддержкой поясницы и
+                                    регулировкой подъема
+                                </div>
+                                <div class="card-foxboost__rating">
+                                    <div class="card-foxboost__stars">
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star card-foxboost__star_gray"></span>
+                                    </div>
+                                    <div class="card-foxboost__average">4.6</div>
+                                    <div class="card-foxboost__reviews">12 оценок</div>
+                                </div>
+                                <a class="button card-foxboost__button">Оставить заявку</a>
+                            </div>
+                            <div class="card-foxboost__special card-foxboost__special_recommended"></div>
+                        </div>
+                        <div class="card-foxboost section-foxboost__card">
+                            <div class="card-foxboost__caption">
+                                <div class="card-foxboost__image">
+                                    <a class="card-foxboost__link" href="#" title="Посмотреть кресло FoxGear NETZ model X">
+                                        <img
+                                            class="card-foxboost__img"
+                                            src="images/foxboosts/image.png"
+                                            alt="Кресло FoxGear NETZ model X "
+                                        />
+                                    </a>
+                                </div>
+                                <div class="card-foxboost__stats">
+                                    <div class="card-foxboost__togo-apps">1500 дней, 100000 заявок</div>
+                                    <div class="card-foxboost__views">15600</div>
+                                </div>
+                                <h3 class="card-foxboost__title">
+                                    <a class="card-foxboost__link" href="#" title="Посмотреть кресло FoxGear NETZ model X">
+                                        Кресло FoxGear NETZ model X белого, чёрного и серого цвета c регулировкой подъема
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="card-foxboost__content">
+                                <div class="card-foxboost__description">
+                                    Комфортное настраиваемое офисное кресло для дома, предприятия, с отличной поддержкой поясницы и
+                                    регулировкой подъема
+                                </div>
+                                <div class="card-foxboost__rating">
+                                    <div class="card-foxboost__stars">
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star card-foxboost__star_gray"></span>
+                                    </div>
+                                    <div class="card-foxboost__average">4.6</div>
+                                    <div class="card-foxboost__reviews">12 оценок</div>
+                                </div>
+                                <a class="button card-foxboost__button">Оставить заявку</a>
+                            </div>
+                            <div class="card-foxboost__special card-foxboost__special_recommended"></div>
+                        </div>
+                        <div class="card-foxboost section-foxboost__card">
+                            <div class="card-foxboost__caption">
+                                <div class="card-foxboost__image">
+                                    <a class="card-foxboost__link" href="#" title="Посмотреть кресло FoxGear NETZ model X">
+                                        <img
+                                            class="card-foxboost__img"
+                                            src="images/foxboosts/image.png"
+                                            alt="Кресло FoxGear NETZ model X "
+                                        />
+                                    </a>
+                                </div>
+                                <div class="card-foxboost__stats">
+                                    <div class="card-foxboost__togo-apps">1500 дней, 100000 заявок</div>
+                                    <div class="card-foxboost__views">15600</div>
+                                </div>
+                                <h3 class="card-foxboost__title">
+                                    <a class="card-foxboost__link" href="#" title="Посмотреть кресло FoxGear NETZ model X">
+                                        Кресло FoxGear NETZ model X белого, чёрного и серого цвета c регулировкой подъема
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="card-foxboost__content">
+                                <div class="card-foxboost__description">
+                                    Комфортное настраиваемое офисное кресло для дома, предприятия, с отличной поддержкой поясницы и
+                                    регулировкой подъема
+                                </div>
+                                <div class="card-foxboost__rating">
+                                    <div class="card-foxboost__stars">
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star card-foxboost__star_gray"></span>
+                                    </div>
+                                    <div class="card-foxboost__average">4.6</div>
+                                    <div class="card-foxboost__reviews">12 оценок</div>
+                                </div>
+                                <a class="button card-foxboost__button">Оставить заявку</a>
+                            </div>
+                            <div class="card-foxboost__special card-foxboost__special_recommended"></div>
+                        </div>
+                        <div class="card-foxboost section-foxboost__card">
+                            <div class="card-foxboost__caption">
+                                <div class="card-foxboost__image">
+                                    <a class="card-foxboost__link" href="#" title="Посмотреть кресло FoxGear NETZ model X">
+                                        <img
+                                            class="card-foxboost__img"
+                                            src="images/foxboosts/image.png"
+                                            alt="Кресло FoxGear NETZ model X "
+                                        />
+                                    </a>
+                                </div>
+                                <div class="card-foxboost__stats">
+                                    <div class="card-foxboost__togo-apps">1500 дней, 100000 заявок</div>
+                                    <div class="card-foxboost__views">15600</div>
+                                </div>
+                                <h3 class="card-foxboost__title">
+                                    <a class="card-foxboost__link" href="#" title="Посмотреть кресло FoxGear NETZ model X">
+                                        Кресло FoxGear NETZ model X белого, чёрного и серого цвета c регулировкой подъема
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="card-foxboost__content">
+                                <div class="card-foxboost__description">
+                                    Комфортное настраиваемое офисное кресло для дома, предприятия, с отличной поддержкой поясницы и
+                                    регулировкой подъема
+                                </div>
+                                <div class="card-foxboost__rating">
+                                    <div class="card-foxboost__stars">
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star card-foxboost__star_gray"></span>
+                                    </div>
+                                    <div class="card-foxboost__average">4.6</div>
+                                    <div class="card-foxboost__reviews">12 оценок</div>
+                                </div>
+                                <a class="button card-foxboost__button">Оставить заявку</a>
+                            </div>
+                            <div class="card-foxboost__special card-foxboost__special_recommended"></div>
+                        </div>
+                        <div class="card-foxboost section-foxboost__card">
+                            <div class="card-foxboost__caption">
+                                <div class="card-foxboost__image">
+                                    <a class="card-foxboost__link" href="#" title="Посмотреть кресло FoxGear NETZ model X">
+                                        <img
+                                            class="card-foxboost__img"
+                                            src="images/foxboosts/image.png"
+                                            alt="Кресло FoxGear NETZ model X "
+                                        />
+                                    </a>
+                                </div>
+                                <div class="card-foxboost__stats">
+                                    <div class="card-foxboost__togo-apps">1500 дней, 100000 заявок</div>
+                                    <div class="card-foxboost__views">15600</div>
+                                </div>
+                                <h3 class="card-foxboost__title">
+                                    <a class="card-foxboost__link" href="#" title="Посмотреть кресло FoxGear NETZ model X">
+                                        Кресло FoxGear NETZ model X белого, чёрного и серого цвета c регулировкой подъема
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="card-foxboost__content">
+                                <div class="card-foxboost__description">
+                                    Комфортное настраиваемое офисное кресло для дома, предприятия, с отличной поддержкой поясницы и
+                                    регулировкой подъема
+                                </div>
+                                <div class="card-foxboost__rating">
+                                    <div class="card-foxboost__stars">
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star card-foxboost__star_gray"></span>
+                                    </div>
+                                    <div class="card-foxboost__average">4.6</div>
+                                    <div class="card-foxboost__reviews">12 оценок</div>
+                                </div>
+                                <a class="button card-foxboost__button">Оставить заявку</a>
+                            </div>
+                            <div class="card-foxboost__special card-foxboost__special_recommended"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <h2 class="title">Анонс фоксбустов</h2>
+                    <div class="section-foxboost">
+                        <div class="card-foxboost section-foxboost__card">
+                            <div class="card-foxboost__caption">
+                                <div class="card-foxboost__image">
+                                    <a class="card-foxboost__link" href="#" title="Посмотреть кресло FoxGear NETZ model X">
+                                        <img
+                                            class="card-foxboost__img"
+                                            src="images/foxboosts/image.png"
+                                            alt="Кресло FoxGear NETZ model X "
+                                        />
+                                    </a>
+                                </div>
+                                <div class="card-foxboost__stats">
+                                    <div class="card-foxboost__togo-apps">1500 дней, 100000 заявок</div>
+                                    <div class="card-foxboost__views">15600</div>
+                                </div>
+                                <h3 class="card-foxboost__title">
+                                    <a class="card-foxboost__link" href="#" title="Посмотреть кресло FoxGear NETZ model X">
+                                        Кресло FoxGear NETZ model X белого, чёрного и серого цвета c регулировкой подъема
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="card-foxboost__content">
+                                <div class="card-foxboost__description">
+                                    Комфортное настраиваемое офисное кресло для дома, предприятия, с отличной поддержкой поясницы и
+                                    регулировкой подъема
+                                </div>
+                                <div class="card-foxboost__rating">
+                                    <div class="card-foxboost__stars">
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star card-foxboost__star_gray"></span>
+                                    </div>
+                                    <div class="card-foxboost__average">4.6</div>
+                                    <div class="card-foxboost__reviews">12 оценок</div>
+                                </div>
+                                <a class="button card-foxboost__button">Оставить заявку</a>
+                            </div>
+                            <div class="card-foxboost__special card-foxboost__special_recommended"></div>
+                        </div>
+                        <div class="card-foxboost section-foxboost__card">
+                            <div class="card-foxboost__caption">
+                                <div class="card-foxboost__image">
+                                    <a class="card-foxboost__link" href="#" title="Посмотреть кресло FoxGear NETZ model X">
+                                        <img
+                                            class="card-foxboost__img"
+                                            src="images/foxboosts/image.png"
+                                            alt="Кресло FoxGear NETZ model X "
+                                        />
+                                    </a>
+                                </div>
+                                <div class="card-foxboost__stats">
+                                    <div class="card-foxboost__togo-apps">1500 дней, 100000 заявок</div>
+                                    <div class="card-foxboost__views">15600</div>
+                                </div>
+                                <h3 class="card-foxboost__title">
+                                    <a class="card-foxboost__link" href="#" title="Посмотреть кресло FoxGear NETZ model X">
+                                        Кресло FoxGear NETZ model X белого, чёрного и серого цвета c регулировкой подъема
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="card-foxboost__content">
+                                <div class="card-foxboost__description">
+                                    Комфортное настраиваемое офисное кресло для дома, предприятия, с отличной поддержкой поясницы и
+                                    регулировкой подъема
+                                </div>
+                                <div class="card-foxboost__rating">
+                                    <div class="card-foxboost__stars">
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star"></span>
+                                        <span class="card-foxboost__star card-foxboost__star_gray"></span>
+                                    </div>
+                                    <div class="card-foxboost__average">4.6</div>
+                                    <div class="card-foxboost__reviews">12 оценок</div>
+                                </div>
+                                <a class="button card-foxboost__button">Оставить заявку</a>
+                            </div>
+                            <div class="card-foxboost__special card-foxboost__special_recommended"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <h2 class="title">Амбассадоры и инфлюенсеры</h2>
+                    <div class="section-ambassador">
+                        <div class="card-ambassador section-ambassador__card card-ambassador_double">
+                            <img class="card-ambassador__img" src="images/ambassadors/wylsacom.png" alt="Блогер и инфлюенсер Wylsacom" />
+                            <div class="card-ambassador__content">
+                                <div class="card-ambassador__title">Wylsacom Wylsacom</div>
+                                <div class="card-ambassador__description">
+                                    О креслах FoxGear, клавиатурах и обо всём остальном, что так интересно всем любителям компьютерных игр
+                                </div>
+                            </div>
+                            <a class="card-ambassador__link" href="#" title="Посмотреть статью" target="_blank"></a>
+                        </div>
+                        <div class="card-ambassador section-ambassador__card">
+                            <img class="card-ambassador__img" src="images/ambassadors/rozetked.jpg" alt="Блог Rozetked" />
+                            <div class="card-ambassador__content">
+                                <div class="card-ambassador__title">Rozetked</div>
+                                <div class="card-ambassador__description">Обзор на клавиатуры NuPhy</div>
+                            </div>
+                            <a class="card-ambassador__link" href="#" title="Посмотреть статью" target="_blank"></a>
+                        </div>
+                        <div class="card-ambassador section-ambassador__card">
+                            <img class="card-ambassador__img" src="images/ambassadors/alyona_rus.jpg" alt="IT-блогер Алёна Русь" />
+                            <div class="card-ambassador__content">
+                                <div class="card-ambassador__title">Алёна Русь</div>
+                                <div class="card-ambassador__description">Современная компьютерная мебель</div>
+                            </div>
+                            <a class="card-ambassador__link" href="#" title="Посмотреть статью" target="_blank"></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <h2 class="title">Контакты</h2>
+                    <div class="contacts">
+                        <div class="contacts__address">
+                            <p class="contacts__p">г. Москва, Волгоградскиий проспект, 47</p>
+                            <p class="contacts__p">foxboost.ru</p>
+                            <p class="contacts__p">info@foxboost.ru</p>
+                            <p class="contacts__p">+7 (495) 259-58-78</p>
+                            <p class="contacts__p">+7 (495) 259-58-13</p>
+                        </div>
+                        <div class="contacts__span"></div>
+                        <div class="contacts__feedback">
+                            <p class="contacts__p">
+                                Если у вас есть вопросы или предложения, мы будем рады их обсудить. Оставьте свои контакты, и мы свяжемся с
+                                вами!
+                            </p>
+                            <form class="contacts__form">
+                                <input class="input contacts__input" name="name" placeholder="Ваше имя" />
+                                <input class="input contacts__input" name="email" placeholder="E-mail" />
+                                <textarea
+                                    class="textarea contacts__textarea"
+                                    name="request"
+                                    placeholder="Задайте свой вопрос или расскажите о предложении"
+                                ></textarea>
+                                <input class="button contacts__button" type="submit" value="Отправить" />
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="wrapper footer__wrapper">
+                <div class="footer__content">
+                    <div class="logo footer__logo">
+                        <a class="logo__link" href="index.html" tabindex="-1">
+                            <img src="images/logo-text.webp" alt="Компания" class="logo__image" title="На главную страницу" />
+                        </a>
+                    </div>
+                    <div class="footer__menu">
+                        <div class="footer__menu-column">
+                            <div class="footer__menu-title">Фоксбусты</div>
+                            <ul class="footer__menu-items">
+                                <li class="footer__menu-item">
+                                    <a class="link link_light" href="#" title="Фоксбусты компьютерных столов">Компьютерные столы</a>
                                 </li>
-                                <li class="menu-dropdown__item">
-                                    <a class="menu-dropdown__link" href="air75-he.html" title="Клавиатура NuPhy Air75 HE">
-                                        Клавиатура NuPhy Air75 HE
+                                <li class="footer__menu-item">
+                                    <a class="link link_light" href="#" title="Фоксбусты кресел">Кресла</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="link link_light" href="#" title="Фоксбусты клавиатур">Клавиатуры</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="link link_light" href="#" title="Фоксбусты столиков">Столики</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="link link_light" href="#" title="Фоксбусты аксессуаров">Аксессуары</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="link link_light" href="#" title="Прочие фоксбусты">Прочее</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__menu-column">
+                            <div class="footer__menu-title">Поддержка</div>
+                            <ul class="footer__menu-items">
+                                <li class="footer__menu-item">
+                                    <a class="link link_light" href="#" title="О сайте Foxboost.ru">Как это работает</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="link link_light" href="mailto:foxboost@mail.ru" title="Написать нам e-mail">
+                                        foxboost@mail.ru
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                    </li>
-                    <li class="menu-main__item">
-                        <a class="menu-main__link" href="keycaps.html" title="Кейкапы">
-                            Кейкапы
-                        </a>
-                    </li>
-                    <li class="menu-main__item hidden">
-                        <a class="menu-main__link" href="index.html#reviews" title="О нас пишут">
-                            О нас
-                        </a>
-                    </li>
-                    <li class="menu-main__item">
-                        <a class="menu-main__link" href="index.html#contacts" title="Контакты">
-                            Контакты
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="menu-mobile-button">
-                <svg aria-hidden="true" 
-                    focusable="false" 
-                    role="presentation" 
-                    class="menu-mobile-button__icon" 
-                    viewBox="0 0 64 64">
-                    <path class="menu-mobile-button__icon-line1" d="M7 15h51"></path>
-                    <path class="menu-mobile-button__icon-line2" d="M7 32h43"></path>
-                    <path class="menu-mobile-button__icon-line3" d="M7 49h51"></path>
-                </svg>
-            </div>
-        </div>
-    </header>
-    <div class="menu-mobile transparent">
-        <div class="menu-mobile__content">
-            <ul class="menu-mobile__items">
-                <li class="menu-mobile__item hidden">
-                    <a class="menu-mobile__item-link" 
-                        href="#" 
-                        title="Клавиатуры">
-                        <img class="menu-mobile__item-logo"
-                              src="images/menu-mobile/menu-mobile-keyboards.webp"
-                              alt="Клавиатуры">
-                        <div class="menu-mobile__item-title">
-                            Клавиатуры
-                        </div>
-                        <div class="menu-mobile__item-arrow"></div>
-                    </a>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__item-link" 
-                        href="keyboards-he.html" 
-                        title="Клавиатуры с магнитными переключателями">
-                        <img class="menu-mobile__item-logo"
-                              src="images/menu-mobile/menu-mobile-keyboards-he.webp"
-                              alt="Клавиатуры с магнитными переключателями">
-                        <div class="menu-mobile__item-title">
-                            Клавиатуры с магнитными переключателями
-                        </div>
-                        <div class="menu-mobile__item-arrow"></div>
-                    </a>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__item-link" 
-                        href="keycaps.html" 
-                        title="Кейкапы">
-                        <img class="menu-mobile__item-logo"
-                              src="images/menu-mobile/menu-mobile-keycaps.webp"
-                              alt="Кейкапы">
-                        <div class="menu-mobile__item-title">
-                            Кейкапы
-                        </div>
-                        <div class="menu-mobile__item-arrow"></div>
-                    </a>
-                </li>
-                <li class="menu-mobile__item hidden">
-                    <a class="menu-mobile__item-link" 
-                        href="#" 
-                        title="О нас">
-                        <img class="menu-mobile__item-logo"
-                              src="images/menu-mobile/menu-mobile-about.webp"
-                              alt="О нас">
-                        <div class="menu-mobile__item-title">
-                            О нас
-                        </div>
-                        <div class="menu-mobile__item-arrow"></div>
-                    </a>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__item-link" 
-                        href="index.html#contacts" 
-                        title="Контакты">
-                        <img class="menu-mobile__item-logo"
-                              src="images/menu-mobile/menu-mobile-contacts.webp"
-                              alt="Контакты">
-                        <div class="menu-mobile__item-title">
-                            Контакты
-                        </div>
-                        <div class="menu-mobile__item-arrow"></div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <main class="main">
-        <div class="wrapper">
-            <div class="wrapper-1600">
-                <div class="hero-slider">
-                    <div class="hero-slider__cards owl-carousel owl-theme">
-                        <div class="hero-slider__card">
-                            <a class="hero-slider__link" href="#" title="NuPhy - клавиатуры и аксессуары">
-                                <img class="hero-slider__image" src="images/hero-slider/hero-slider-01.png" alt="NuPhy - клавиатуры и аксессуары">
-                            </a>
-                        </div>
-                        <div class="hero-slider__card">
-                            <a class="hero-slider__link" href="#" title="NuPhy - клавиатуры и аксессуары">
-                                <img class="hero-slider__image" src="images/hero-slider/hero-slider-02.png" alt="NuPhy - клавиатуры и аксессуары">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="hero-slider__button hero-slider__button_prev"></div>
-                    <div class="hero-slider__button hero-slider__button_next"></div>
-                </div>
-                <section class="products">
-                    <h2 class="section-title products__title">Клавиатуры и кейкапы</h2>
-                    <div class="products__cards">  
-                        <div class="card-product products__card">
-                            <div class="card-product__image">
-                                <img class="card-product__image-img"
-                                    src="images/products/halo65-he.webp"
-                                    alt="Клавиатура NuPhy Halo65 HE">
-                                <div class="card-product__buttons">
-                                    <button class="button card-product__button button_rounded button_plus" 
-                                        title="Купить">
-                                    </button>
-                                    <button class="button card-product__button button_rounded button_heart" 
-                                        title="В избранное">
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-product__content">
-                                <div class="card-product__title">
-                                    NuPhy Halo65 HE
-                                </div>
-                                <div class="card-product__description">
-                                    Игровая клавиатура с магнитными переключателями
-                                </div>
-                                <div class="rating card-product__rating">
-                                    <div class="rating__stars">
-                                        <span class="rating__star"></span>
-                                        <span class="rating__star"></span>
-                                        <span class="rating__star"></span>
-                                        <span class="rating__star"></span>
-                                        <span class="rating__star rating__star_blank"></span>
-                                    </div>
-                                    <div class="rating__reviews">
-                                        (110)
-                                    </div>
-                                </div>
-                                <div class="card-product__price">
-                                    10 000.00 р.
-                                </div>
-                            </div>
-                            <a class="card-product__link"
-                            href="halo65-he.html"
-                            title="Купить клавиатуру NuPhy Halo65 HE"></a>
-                        </div>
-                        <div class="card-product products__card">
-                            <div class="card-product__image">
-                                <img class="card-product__image-img"
-                                    src="images/products/halo60-he.webp"
-                                    alt="Клавиатура NuPhy Air60 HE">
-                                <div class="card-product__buttons">
-                                    <button class="button card-product__button button_rounded button_plus" 
-                                        title="Купить">
-                                    </button>
-                                    <button class="button card-product__button button_rounded button_heart" 
-                                        title="В избранное">
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-product__content">
-                                <div class="card-product__title">
-                                    NuPhy Air60 HE
-                                </div>
-                                <div class="card-product__description">
-                                    Игровая клавиатура с магнитными переключателями
-                                </div>
-                                <div class="rating card-product__rating">
-                                    <div class="rating__stars">
-                                        <span class="rating__star"></span>
-                                        <span class="rating__star"></span>
-                                        <span class="rating__star"></span>
-                                        <span class="rating__star"></span>
-                                        <span class="rating__star"></span>
-                                    </div>
-                                    <div class="rating__reviews">
-                                        (24)
-                                    </div>
-                                </div>
-                                <div class="card-product__price">
-                                    9 000.00 р.
-                                </div>
-                            </div>
-                            <a class="card-product__link"
-                            href="air60-he.html"
-                            title="Купить клавиатуру NuPhy Air60 HE"></a>
-                        </div>
-                        <div class="card-product products__card">
-                            <div class="card-product__image">
-                                <img class="card-product__image-img"
-                                    src="images/products/halo75-he.webp"
-                                    alt="Клавиатура NuPhy Air75 HE">
-                                <div class="card-product__buttons">
-                                    <button class="button card-product__button button_rounded button_plus" 
-                                        title="Купить">
-                                    </button>
-                                    <button class="button card-product__button button_rounded button_heart" 
-                                        title="В избранное">
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-product__content">
-                                <div class="card-product__title">
-                                    NuPhy Air75 HE
-                                </div>
-                                <div class="card-product__description">
-                                    Игровая клавиатура с магнитными переключателями
-                                </div>
-                                <div class="rating card-product__rating">
-                                    <div class="rating__stars">
-                                        <span class="rating__star"></span>
-                                        <span class="rating__star"></span>
-                                        <span class="rating__star"></span>
-                                        <span class="rating__star"></span>
-                                        <span class="rating__star"></span>
-                                    </div>
-                                    <div class="rating__reviews">
-                                        (98)
-                                    </div>
-                                </div>
-                                <div class="card-product__price">
-                                    11 000.00 р.
-                                </div>
-                            </div>
-                            <a class="card-product__link"
-                            href="air75-he.html"
-                            title="Купить клавиатуру NuPhy Air75 HE"></a>
-                        </div>
-                        <div class="card-product products__card">
-                            <div class="card-product__image">
-                                <img class="card-product__image-img"
-                                    src="images/products/nsa-shine-through-abs-keycaps.webp"
-                                    alt="Кейкапсы NuPhy Shine-through">
-                                <div class="card-product__buttons">
-                                    <button class="button card-product__button button_rounded button_plus" 
-                                        title="Купить">
-                                    </button>
-                                    <button class="button card-product__button button_rounded button_heart" 
-                                        title="В избранное">
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-product__content">
-                                <div class="card-product__title">
-                                    NuPhy Shine-through
-                                </div>
-                                <div class="card-product__description">
-                                    PC-кейкапсы с профилем nSA
-                                </div>
-                                <div class="rating card-product__rating">
-                                    <div class="rating__stars">
-                                        <span class="rating__star"></span>
-                                        <span class="rating__star"></span>
-                                        <span class="rating__star"></span>
-                                        <span class="rating__star"></span>
-                                        <span class="rating__star"></span>
-                                    </div>
-                                    <div class="rating__reviews">
-                                        (12)
-                                    </div>
-                                </div>
-                                <div class="card-product__price">
-                                    1 900.00 р.
-                                </div>
-                            </div>
-                            <a class="card-product__link"
-                            href="nsa-shine-through.html"
-                            title="Купить кейкапы NuPhy Shine-through"></a>
-                        </div>
-                    </div>
-                </section>
-                <section class="contacts" id="contacts">
-                    <div class="contacts__info">
-                        <h2 class="section-title contacts__header">Контакты</h2>
-                        <div class="contacts__address">
-                            <p class="contacts__p">Электронная почта: <a class="contacts__email" href="mailto:info@foxgamer.ru">info@foxgamer.ru</a></p>
-                            <p class="contacts__p">
-                                <a class="contacts__tel" href="tel:+74952595878">+7 (495) 259-58-78</a>
-                                <a class="contacts__tel" href="tel:+74952595813">+7 (495) 259-58-13</a>
-                            </p>
-                        </div>
-                        <div class="contacts__afterword">
-                            Мы поможем подобрать идеальную клавиатуру и аксессуары для вас.
-                        </div>
-                        <ul class="contacts__socials">
-                            <li class="contacts__social contacts__social_telegram">
-                                <a class="contacts__social-link"
-                                    href="#"
-                                    title="Мы в Telegram">
-                                </a>
-                            </li>
-                            <li class="contacts__social contacts__social_instagram">
-                                <a class="contacts__social-link"
-                                    href="#"
-                                    title="Мы в Instagram*">
-                                </a>
-                            </li>
-                            <li class="contacts__social contacts__social_vk">
-                                <a class="contacts__social-link"
-                                    href="#"
-                                    title="Мы ВКонтакте">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="contacts__map">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=mymaps%3AmtfhU9h9r-a8w_lkm3sE7-SGyp2FltTc&amp;width=100%25&amp;height=360&amp;lang=ru_RU&amp;scroll=true"></script>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="footer__wrapper">
-            <div class="footer__menu">
-                <div class="footer__menu-column">
-                    <div class="footer__menu-title">
-                        Изделия NuPhy
-                    </div>
-                    <div class="footer__menu-item">
-                        <a class="footer__menu-link"
-                            href="halo65-he.html"
-                            title="Купить клавиатуру NuPhy Halo65 HE">
-                            Клавиатура NuPhy Halo65 HE
-                        </a>
-                    </div>
-                    <div class="footer__menu-item">
-                        <a class="footer__menu-link"
-                            href="air60-he.html"
-                            title="Купить клавиатуру NuPhy Air60 HEE">
-                            Клавиатура NuPhy Air60 HE
-                        </a>
-                    </div>
-                    <div class="footer__menu-item">
-                        <a class="footer__menu-link"
-                            href="air75-he.html"
-                            title="Купить клавиатуру NuPhy Air75 HE">
-                            Клавиатура NuPhy Air75 HE
-                        </a>
-                    </div>
-                    <div class="footer__menu-item">
-                        <a class="footer__menu-link"
-                            href="#"
-                            title="Купить PC-кейкапы с профилем nSA">
-                            PC-кейкапы с профилем nSA
-                        </a>
                     </div>
                 </div>
-                <div class="footer__menu-column">
-                    <div class="footer__menu-title">
-                        Поддержка
-                    </div>
-                    <div class="footer__menu-item">
-                        <a class="footer__menu-link"
-                            href="agreement.html"
-                            title="Читать Пользовательское соглашение">
-                            Пользовательское соглашение
+                <div class="footer__legal">
+                    <div class="footer__copyright">&copy; ООО &ldquo;ФОКСГЕЙМЕР&rdquo;, 2025</div>
+                    <div class="footer__disclamer">
+                        Посещая сайт foxboost.ru, вы предоставляете согласие на обработку данных о посещении вами сайта foxboost.ru, сбор
+                        которых автоматически осуществляется на условиях 
+                        <a class="link footer__link link_light" href="#" title="Ознакомиться с политикой конфиденциальности">
+                            Политика конфиденциальности
                         </a>
-                    </div>
-                </div>
-                <div class="footer__menu-column">
-                    <div class="footer__menu-title">
-                        Контакты
-                    </div>
-                    <div class="footer__menu-item">
-                        <a class="footer__menu-link"
-                            href="mailto:info@foxgamer.ru"
-                            title="Написать в FoxGear">
-                            info@foxgamer.ru
-                        </a>
+                        .
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer__motto">
-            &copy; 2025 NuPhy | Клавиатуры для Maс и Windows
-        </div>
-    </footer>
-    <div class="back-to-top invisible">
-        <svg width="35px" height="35px" role="button" aria-label="Наверх" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z"></path></svg>
-    </div>
-    
-    <script src="scripts/util/jquery-3.7.1.min.js"></script>
-    <script src="scripts/util/owl.carousel.min.js"></script>
-    <script src="scripts/menu-mobile.js"></script>
-    <script src="scripts/back-to-top.js"></script>
-    <script>
-        $(document).ready(function(){
-            const $owl = $('.hero-slider__cards').owlCarousel(
-            {
-                items: 1,
-                loop: true,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                nav: false,
-                dots: false,
-                animateIn: 'animate__animated animate__fadeIn',
-                smartSpeed: 450,
-                pullDrag: true,
-                autoWidth: false,
-                autoHeight: false,
-            });
-            $(".hero-slider__button_next").click(function() {
-                $owl.trigger("next.owl.carousel");
-            });
+        </footer>
 
-            $(".hero-slider__button_prev").click(function() {
-                $owl.trigger("prev.owl.carousel");
-            });
-        });
-    </script>
-</body>
+        <div class="back-to-top invisible">
+            <svg
+                width="35px"
+                height="35px"
+                role="button"
+                aria-label="Наверх"
+                version="1.1"
+                viewBox="0 0 32 32"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+                <path
+                    d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z"
+                ></path>
+            </svg>
+        </div>
+
+        <script src="scripts/util/jquery-3.7.1.min.js"></script>
+        <script src="scripts/util/owl.carousel.min.js"></script>
+        <script src="scripts/menu-mobile.js"></script>
+        <script src="scripts/slider-hero.js"></script>
+        <script src="scripts/section-foxboost.js"></script>
+        <script src="scripts/section-ambassador.js"></script>
+        <script src="scripts/section-ambassador.js"></script>
+    </body>
 </html>

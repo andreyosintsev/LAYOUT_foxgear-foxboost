@@ -15,4 +15,8 @@
     .wrapper {
         padding: 0 10px;
     }
+
+    .hero .wrapper {
+        padding: 0;
+    }
 }

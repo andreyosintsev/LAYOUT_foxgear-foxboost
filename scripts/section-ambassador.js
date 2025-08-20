@@ -3,11 +3,7 @@ $(document).ready(function () {
     const $ambassadors = $(".section-ambassador");
 
     function initCarousel() {
-        if (
-            $(window).width() < 1440 &&
-            $(window).width() >= 480 &&
-            !ambassadorsInitialized
-        ) {
+        if ($(window).width() <= 1440 && $(window).width() >= 480 && !ambassadorsInitialized) {
             $ambassadors.addClass("owl-carousel owl-theme").owlCarousel({
                 items: 1.5,
                 loop: true,
@@ -17,10 +13,10 @@ $(document).ready(function () {
                 center: false,
                 pullDrag: true,
                 responsive: {
-                    600: {
+                    640: {
                         items: 2.5,
                     },
-                    834: {
+                    1000: {
                         items: 3.5,
                     },
                 },
@@ -31,11 +27,9 @@ $(document).ready(function () {
     }
 
     function destroyCarousel() {
-        if ($(window).width() >= 1440 || $(window).width() < 480) {
+        if ($(window).width() > 1440 || $(window).width() < 480) {
             if (ambassadorsInitialized) {
-                $ambassadors
-                    .trigger("destroy.owl.carousel")
-                    .removeClass("owl-carousel owl-theme");
+                $ambassadors.trigger("destroy.owl.carousel").removeClass("owl-carousel owl-theme");
                 ambassadorsInitialized = false;
             }
         }
