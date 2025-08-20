@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contacts Block</title>
+        <link rel="stylesheet" href="../../css/common/normalize.css" />
+        <link rel="stylesheet" href="../../css/common/consts.css" />
+        <link rel="stylesheet" href="../wrapper/css/wrapper.css" />
+        <link rel="stylesheet" href="../title/css/title.css" />
+        <link rel="stylesheet" href="../input/css/input.css" />
+        <link rel="stylesheet" href="../textarea/css/textarea.css" />
+        <link rel="stylesheet" href="../button/css/button.css" />
+        <link rel="stylesheet" href="css/contacts.css" />
+    </head>
+    <body style="background-color: lime">
+        <div class="wrapper">
+            <div class="contacts">
+                <div class="title contacts__title">Контакты</div>
+                <div class="contacts__content">
+                    <div class="contacts__address">
+                        <p class="contacts__p">г. Москва, Волгоградскиий проспект, 47</p>
+                        <p class="contacts__p">foxboost.ru</p>
+                        <p class="contacts__p">info@foxboost.ru</p>
+                        <p class="contacts__p">+7 (495) 259-58-78</p>
+                        <p class="contacts__p">+7 (495) 259-58-13</p>
+                    </div>
+                    <div class="contacts__span"></div>
+                    <div class="contacts__feedback">
+                        <p class="contacts__p">
+                            Если у вас есть вопросы или предложения, мы будем рады их обсудить. Оставьте свои контакты, и мы свяжемся с
+                            вами!
+                        </p>
+                        <form class="contacts__form">
+                            <input class="input contacts__input" name="name" placeholder="Ваше имя" />
+                            <input class="input contacts__input" name="email" placeholder="E-mail" />
+                            <textarea
+                                class="textarea contacts__textarea"
+                                name="request"
+                                placeholder="Задайте свой вопрос или расскажите о предложении"
+                            ></textarea>
+                            <input class="button contacts__button" type="submit" value="Отправить" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
