@@ -1,0 +1,21 @@
+.loader {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100px;
+    height: 100px;
+
+    z-index: 2000;
+}
+
+.loader__image {
+    width: 100%;
+    height: auto;
+}
+
+.hidden {
+    display: none !important;
+}
