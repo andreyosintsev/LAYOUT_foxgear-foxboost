@@ -25,6 +25,10 @@ body {
     background-color: var(--background-color-main, #FFFFFF);
 }
 
+.noscroll {
+    overflow: hidden;
+}
+
 .section-logo {
     margin-bottom: 20px;
 }

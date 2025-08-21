@@ -24,6 +24,7 @@
         <link rel="stylesheet" href="blocks/button-menu-mobile/css/button-menu-mobile.css" />
         <link rel="stylesheet" href="blocks/menu-main/css/menu-main.css" />
         <link rel="stylesheet" href="blocks/header/css/header.css" />
+        <link rel="stylesheet" href="blocks/menu-mobile/css/menu-mobile.css" />
         <link rel="stylesheet" href="blocks/motto/css/motto.css" />
         <link rel="stylesheet" href="blocks/card-stats/css/card-stats.css" />
         <link rel="stylesheet" href="blocks/panel-stats/css/panel-stats.css" />
@@ -39,6 +40,7 @@
         <link rel="stylesheet" href="blocks/contacts/css/contacts.css" />
         <link rel="stylesheet" href="blocks/back-to-top/css/back-to-top.css" />
         <link rel="stylesheet" href="blocks/footer/css/footer.css" />
+        <link rel="stylesheet" href="blocks/overlay/css/overlay.css" />
         <link rel="stylesheet" href="css/pages/index.css" />
     </head>
     <body>
@@ -64,10 +66,10 @@
                     </div>
                     <a href="#" class="link header__about link_special">Как это работает</a>
                     <div class="button-menu-mobile">
-                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <line y1="2" x2="26" y2="2" stroke="black" stroke-width="2" />
-                            <line y1="12" x2="26" y2="12" stroke="black" stroke-width="2" />
-                            <path d="M0 23H30" stroke="black" stroke-width="2" />
+                        <svg aria-hidden="true" focusable="false" role="presentation" class="button-menu-mobile__icon" viewBox="0 0 25 25">
+                            <path class="button-menu-mobile__icon-line1" d="M0 4h28">.</path>
+                            <path class="button-menu-mobile__icon-line2" d="M0 14h28">.</path>
+                            <path class="button-menu-mobile__icon-line3" d="M0 24h28">.</path>
                         </svg>
                     </div>
                 </div>
@@ -96,6 +98,47 @@
                     </ul>
                 </nav>
             </header>
+            <div class="menu-mobile hidden">
+                <div class="menu-mobile__title">
+                    <div class="logo menu-mobile__logo">
+                        <a class="logo__link" href="index.html" title="Foxboost.ru - главная страница">
+                            <img class="logo__image" src="../../images/logo.svg" alt="FoxGear Logo" />
+                        </a>
+                    </div>
+                </div>
+                <ul class="menu-mobile__items">
+                    <li class="menu-mobile__item menu-mobile__item_strong">
+                        <a class="link menu-mobile__link menu-mobile__link_strong" href="#" title="Фоксбусты на компьютерные столы">
+                            Компьютерные столы
+                        </a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="link menu-mobile__link" href="#" title="Фоксбусты на кресла">Кресла</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="link menu-mobile__link" href="#" title="Фоксбусты на клавиатуры">Клавиатуры</a>
+                    </li>
+
+                    <li class="menu-mobile__item">
+                        <a class="link menu-mobile__link" href="#" title="Фоксбусты на столики">Столики</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="link menu-mobile__link" href="#" title="Фоксбусты на аксессуары">Аксессуары</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="link menu-mobile__link" href="#" title="Прочие фоксбусты">Прочие</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="link menu-mobile__link menu-mobile__link_strong" href="#" title="О Фоксбусте">Как это работает</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="link menu-mobile__link" href="#" title="Контакты">Контакты</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="link menu-mobile__link" href="#" title="Написать сообщение">Обратная связь</a>
+                    </li>
+                </ul>
+            </div>
             <div class="wrapper">
                 <div class="motto">Будь в числе первых обладателей новинок</div>
                 <div class="panel-stats">
@@ -618,6 +661,7 @@
                     </div>
                 </div>
             </div>
+            <div class="overlay hidden"></div>
         </footer>
 
         <div class="back-to-top invisible">
