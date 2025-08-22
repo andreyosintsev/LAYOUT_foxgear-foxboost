@@ -41,6 +41,9 @@
         <link rel="stylesheet" href="blocks/back-to-top/css/back-to-top.css" />
         <link rel="stylesheet" href="blocks/footer/css/footer.css" />
         <link rel="stylesheet" href="blocks/overlay/css/overlay.css" />
+        <link rel="stylesheet" href="blocks/loader/css/loader.css" />
+        <link rel="stylesheet" href="blocks/popup/css/popup.css" />
+
         <link rel="stylesheet" href="css/pages/index.css" />
     </head>
     <body>
@@ -98,7 +101,7 @@
                     </ul>
                 </nav>
             </header>
-            <div class="menu-mobile hidden">
+            <div class="menu-mobile invisible">
                 <div class="menu-mobile__title">
                     <div class="logo menu-mobile__logo">
                         <a class="logo__link" href="index.html" title="Foxboost.ru - главная страница">
@@ -242,7 +245,9 @@
                                     <div class="card-foxboost__average">4.6</div>
                                     <div class="card-foxboost__reviews">12 оценок</div>
                                 </div>
-                                <a class="button card-foxboost__button">Оставить заявку</a>
+                                <div class="button card-foxboost__button button_subscribe" data-product="Кресло FoxGear NETZ">
+                                    Оставить заявку
+                                </div>
                             </div>
                             <div class="card-foxboost__special card-foxboost__special_recommended"></div>
                         </div>
@@ -283,7 +288,9 @@
                                     <div class="card-foxboost__average">4.6</div>
                                     <div class="card-foxboost__reviews">12 оценок</div>
                                 </div>
-                                <a class="button card-foxboost__button">Оставить заявку</a>
+                                <div class="button card-foxboost__button button_subscribe" data-product="Кресло FoxGear NETZ">
+                                    Оставить заявку
+                                </div>
                             </div>
                             <div class="card-foxboost__special card-foxboost__special_recommended"></div>
                         </div>
@@ -324,7 +331,9 @@
                                     <div class="card-foxboost__average">4.6</div>
                                     <div class="card-foxboost__reviews">12 оценок</div>
                                 </div>
-                                <a class="button card-foxboost__button">Оставить заявку</a>
+                                <div class="button card-foxboost__button button_subscribe" data-product="Кресло FoxGear NETZ">
+                                    Оставить заявку
+                                </div>
                             </div>
                             <div class="card-foxboost__special card-foxboost__special_recommended"></div>
                         </div>
@@ -365,7 +374,9 @@
                                     <div class="card-foxboost__average">4.6</div>
                                     <div class="card-foxboost__reviews">12 оценок</div>
                                 </div>
-                                <a class="button card-foxboost__button">Оставить заявку</a>
+                                <div class="button card-foxboost__button button_subscribe" data-product="Кресло FoxGear NETZ">
+                                    Оставить заявку
+                                </div>
                             </div>
                             <div class="card-foxboost__special card-foxboost__special_recommended"></div>
                         </div>
@@ -406,7 +417,9 @@
                                     <div class="card-foxboost__average">4.6</div>
                                     <div class="card-foxboost__reviews">12 оценок</div>
                                 </div>
-                                <a class="button card-foxboost__button">Оставить заявку</a>
+                                <div class="button card-foxboost__button button_subscribe" data-product="Кресло FoxGear NETZ">
+                                    Оставить заявку
+                                </div>
                             </div>
                             <div class="card-foxboost__special card-foxboost__special_recommended"></div>
                         </div>
@@ -447,7 +460,9 @@
                                     <div class="card-foxboost__average">4.6</div>
                                     <div class="card-foxboost__reviews">12 оценок</div>
                                 </div>
-                                <a class="button card-foxboost__button">Оставить заявку</a>
+                                <div class="button card-foxboost__button button_subscribe" data-product="Кресло FoxGear NETZ">
+                                    Оставить заявку
+                                </div>
                             </div>
                             <div class="card-foxboost__special card-foxboost__special_recommended"></div>
                         </div>
@@ -493,7 +508,9 @@
                                     <div class="card-foxboost__average">4.6</div>
                                     <div class="card-foxboost__reviews">12 оценок</div>
                                 </div>
-                                <a class="button card-foxboost__button">Оставить заявку</a>
+                                <div class="button card-foxboost__button button_subscribe" data-product="Кресло FoxGear NETZ">
+                                    Оставить заявку
+                                </div>
                             </div>
                             <div class="card-foxboost__special card-foxboost__special_recommended"></div>
                         </div>
@@ -534,7 +551,9 @@
                                     <div class="card-foxboost__average">4.6</div>
                                     <div class="card-foxboost__reviews">12 оценок</div>
                                 </div>
-                                <a class="button card-foxboost__button">Оставить заявку</a>
+                                <div class="button card-foxboost__button button_subscribe" data-product="Кресло FoxGear NETZ">
+                                    Оставить заявку
+                                </div>
                             </div>
                             <div class="card-foxboost__special card-foxboost__special_recommended"></div>
                         </div>
@@ -661,8 +680,89 @@
                     </div>
                 </div>
             </div>
-            <div class="overlay hidden"></div>
         </footer>
+
+        <div class="loader hidden"></div>
+        <div class="popup hidden" id="popup-order">
+            <h2 class="title popup__title">Оставить заявку</h2>
+            <p class="popup__product">Кресло FoxGear model X</p>
+            <p class="popup__text">
+                Оставьте заявку на этот фоксбуст.
+                <br />
+                Вы получите уведомление на указанный e-mail о начале продаж.
+            </p>
+            <form class="form popup__form">
+                <input class="input popup__input" name="name" placeholder="Ваше имя" />
+                <input class="input popup__input" name="email" placeholder="E-mail" />
+                <input class="input popup__input" name="tel" placeholder="Телефон" />
+                <input class="input popup__input" name="promocode" placeholder="Промокод (при наличии)" />
+                <input type="hidden" name="product" />
+                <input class="button popup__button" type="submit" value="Создать заявку" />
+                <div class="popup__offer">
+                    Нажимая кнопку Отправить вы соглашаетесь с условиями
+                    <a class="link popup__link" href="#" title="Текст публичной оферты" target="_blank">Пользовательского соглашения</a>
+                    и даёте разрешение направлять вам информационную рассылку на указанный выше e-mail. Вы всегда сможете от нее отписаться.
+                </div>
+            </form>
+            <div class="popup__close"></div>
+        </div>
+        <div class="popup hidden" id="popup-success">
+            <h2 class="title popup__title">Заявка оформлена</h2>
+            <p class="popup__text">
+                Поздравляем!
+                <br />
+                <br />
+                Вы подписались на информационную рассылку. При поступлении в продажу данного товара вы получите уведомление на указанный
+                вами e-mail.
+                <br />
+                <br />
+                Благодарим за проявленный интерес!
+            </p>
+            <input class="button popup__button button_close" type="button" value="Закрыть" />
+            <div class="popup__close"></div>
+        </div>
+        <div class="popup hidden" id="popup-failed">
+            <h2 class="title popup__title">Заявка не отправлена</h2>
+            <p class="popup__text">
+                К сожалению, вашу заявку отправить не удалось.
+                <br />
+                <br />
+                Но мы знаем о проблеме, и совсем скоро её устраним. Попробуйте ещё раз отправить обращение позже.
+                <br />
+                <br />
+                Просим прощения за доставленные неудобства.
+            </p>
+            <input class="button popup__button button_close" type="button" value="Закрыть" />
+            <div class="popup__close"></div>
+        </div>
+        <div class="popup hidden" id="popup-unsubscribe">
+            <h2 class="title popup__title">Отписка от рассылки</h2>
+            <p class="popup__text">
+                Вы успешно отписались от информационной рассылки.Теперь вы не будете получать уведомления о новых товарах, поступивших в
+                продажу.
+                <br />
+                <br />
+                Чтобы вновь получать уведомления создайте заявку на заинтересовавший вас товар.
+            </p>
+            <input class="button popup__button button_close" type="button" value="Закрыть" />
+            <div class="popup__close"></div>
+        </div>
+        <div class="popup hidden" id="popup-feedback">
+            <h2 class="title popup__title">Успешно отправлено</h2>
+            <p class="popup__text">
+                Ваш вопрос или предложение успешно отправлено.
+                <br />
+                <br />
+                После ознакомления при необходимости администратор проекта свяжется с вами по указанным вами контактным данным.
+                <br />
+                <br />
+                Благодарим за проявленный интерес!
+            </p>
+            <input class="button popup__button button_close" type="button" value="Закрыть" />
+            <div class="popup__close"></div>
+        </div>
+
+        <div class="overlay hidden"></div>
 
         <div class="back-to-top invisible">
             <svg
@@ -688,6 +788,7 @@
         <script src="scripts/slider-hero.js"></script>
         <script src="scripts/section-foxboost.js"></script>
         <script src="scripts/section-ambassador.js"></script>
-        <script src="scripts/section-ambassador.js"></script>
+        <script src="scripts/popup.js" type="module"></script>
+        <script src="scripts/popup-subscribe.js" type="module"></script>
     </body>
 </html>

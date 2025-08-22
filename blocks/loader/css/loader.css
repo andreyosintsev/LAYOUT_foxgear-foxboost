@@ -8,12 +8,10 @@
     width: 100px;
     height: 100px;
 
-    z-index: 2000;
-}
+    background: url('../images/loader.svg') no-repeat;
+    background-size: contain;
 
-.loader__image {
-    width: 100%;
-    height: auto;
+    z-index: 2000;
 }
 
 .hidden {

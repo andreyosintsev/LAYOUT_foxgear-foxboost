@@ -16,22 +16,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const body = document.querySelector("body");
 
     menuMobileButton.addEventListener("click", () => {
-        if (menuMobile.classList.contains("hidden")) {
+        if (menuMobile.classList.contains("invisible")) {
             showMenuMobile();
         } else {
             hideMenuMobile();
         }
     });
 
-    document.addEventListener("click", (e) => {
+    overlay.addEventListener("click", (e) => {
         if (!menuMobileButton.contains(e.target) && !menuMobile.contains(e.target)) {
             hideMenuMobile();
         }
     });
 
-    window.addEventListener("resize", () => {
-        hideMenuMobile();
-    });
+    // window.addEventListener("resize", () => {
+    //     hideMenuMobile();
+    // });
 
     menuLinks = menuMobile.querySelectorAll(".menu-mobile__item-link");
 
@@ -39,14 +39,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function showMenuMobile() {
         menuMobileButton.classList.add("button-menu-mobile_active");
-        menuMobile.classList.remove("hidden");
+        menuMobile.classList.remove("invisible");
         if (overlay) overlay.classList.remove("hidden");
         body.classList.add("noscroll");
     }
 
     function hideMenuMobile() {
         menuMobileButton.classList.remove("button-menu-mobile_active");
-        menuMobile.classList.add("hidden");
+        menuMobile.classList.add("invisible");
         if (overlay) overlay.classList.add("hidden");
         body.classList.remove("noscroll");
     }
