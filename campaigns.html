@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Панель управления | Foxboost</title>
+
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png" />
+        <link rel="manifest" href="favicons/site.webmanifest" />
+        <meta name="apple-mobile-web-app-title" content="FoxGear NuPhy" />
+
+        <link rel="stylesheet" href="css/common/normalize.css" />
+        <link rel="stylesheet" href="css/common/consts.css" />
+        <link rel="stylesheet" href="css/common/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/common/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="blocks/wrapper/css/wrapper.css" />
+        <link rel="stylesheet" href="blocks/logo/css/logo.css" />
+        <link rel="stylesheet" href="blocks/input/css/input.css" />
+        <link rel="stylesheet" href="blocks/input-search/css/input-search.css" />
+        <link rel="stylesheet" href="blocks/link/css/link.css" />
+        <link rel="stylesheet" href="blocks/button-menu-mobile/css/button-menu-mobile.css" />
+        <link rel="stylesheet" href="blocks/menu-main/css/menu-main.css" />
+        <link rel="stylesheet" href="blocks/header/css/header.css" />
+        <link rel="stylesheet" href="blocks/menu-mobile/css/menu-mobile.css" />
+        <link rel="stylesheet" href="blocks/card-stats/css/card-stats.css" />
+        <link rel="stylesheet" href="blocks/button/css/button.css" />
+        <link rel="stylesheet" href="blocks/title/css/title.css" />
+        <link rel="stylesheet" href="blocks/panel/css/panel.css" />
+        <link rel="stylesheet" href="blocks/back-to-top/css/back-to-top.css" />
+        <link rel="stylesheet" href="blocks/footer/css/footer.css" />
+        <link rel="stylesheet" href="blocks/overlay/css/overlay.css" />
+        <link rel="stylesheet" href="blocks/loader/css/loader.css" />
+        <link rel="stylesheet" href="blocks/popup/css/popup.css" />
+
+        <link rel="stylesheet" href="css/pages/campaigns.css" />
+    </head>
+    <body>
+        <div class="hero">
+            <header class="header">
+                <div class="header__top">
+                    <div class="logo header__logo">
+                        <a class="logo__link" href="index.html">
+                            <picture>
+                                <source srcset="images/logo-mobile.svg" media="(max-width: 768px)" />
+                                <img class="logo__image" src="images/logo.svg" alt="На главную страницу" />
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="input-search header__search">
+                        <input class="input input-search__input" type="text" placeholder="Поиск по названию" />
+                        <svg class="input-search__icon" viewBox="0 0 25 24">
+                            <path
+                                d="M22.7521 2.22438C21.3175 0.789641 19.4109 0 17.3819 0C15.3534 0 13.4461 0.789832 12.0116 2.22438C9.40658 4.82919 9.09461 8.87102 11.0726 11.8219L10.9319 11.9623C10.5389 12.3559 10.4361 12.9313 10.6232 13.4214L9.20121 14.8432L9.0376 14.68C8.96571 14.6081 8.85072 14.6062 8.77636 14.676L1.37917 21.6334C0.837803 22.175 0.837803 23.056 1.37917 23.5973C1.64175 23.8597 1.98994 24.0044 2.36121 24.0044C2.73172 24.0044 3.0803 23.8597 3.34669 23.5933L10.3007 16.2001C10.3699 16.1261 10.3682 16.0104 10.2967 15.9389L10.1329 15.7753L11.5551 14.3537C11.7126 14.4136 11.8789 14.445 12.0449 14.445C12.396 14.445 12.7471 14.3119 13.014 14.0446L13.153 13.9054C14.3937 14.7406 15.853 15.1897 17.3819 15.1897C19.4109 15.1897 21.3176 14.3995 22.7521 12.9651C25.7135 10.0037 25.7135 5.18539 22.7521 2.22438ZM21.4282 11.6406C20.3473 12.7208 18.9103 13.3163 17.3819 13.3163C15.8534 13.3163 14.4163 12.7208 13.3359 11.6406C11.1049 9.4099 11.1049 5.77958 13.3359 3.54852C14.4163 2.46751 15.8534 1.87275 17.3823 1.87275C18.9107 1.87275 20.3477 2.46751 21.4282 3.54814C23.6594 5.77881 23.6594 9.40914 21.4282 11.6406Z"
+                                fill="#666666"
+                            />
+                        </svg>
+                    </div>
+                    <a href="#" class="link header__about link_special">Как это работает</a>
+                    <div class="button-menu-mobile">
+                        <svg aria-hidden="true" focusable="false" role="presentation" class="button-menu-mobile__icon" viewBox="0 0 25 25">
+                            <path class="button-menu-mobile__icon-line1" d="M0 4h28">.</path>
+                            <path class="button-menu-mobile__icon-line2" d="M0 14h28">.</path>
+                            <path class="button-menu-mobile__icon-line3" d="M0 24h28">.</path>
+                        </svg>
+                    </div>
+                </div>
+                <nav class="menu-main header__menu-main" aria-label="Главное меню">
+                    <ul class="menu-main__items">
+                        <li class="menu-main__item">
+                            <a class="menu-main__link" href="category.html" title="Компьютерные столы" aria-label="Компьютерные столы">
+                                Компьютерные столы
+                            </a>
+                        </li>
+                        <li class="menu-main__item menu-main__item_current">
+                            <a class="menu-main__link" href="category.html" title="Кресла" aria-label="Кресла">Кресла</a>
+                        </li>
+                        <li class="menu-main__item">
+                            <a class="menu-main__link" href="category.html" title="Клавиатуры" aria-label="Клавиатуры">Клавиатуры</a>
+                        </li>
+                        <li class="menu-main__item">
+                            <a class="menu-main__link" href="category.html" title="Столики" aria-label="Столики">Столики</a>
+                        </li>
+                        <li class="menu-main__item">
+                            <a class="menu-main__link" href="category.html" title="Аксессуары" aria-label="Аксессуары">Аксессуары</a>
+                        </li>
+                        <li class="menu-main__item">
+                            <a class="menu-main__link" href="category.html" title="Прочее" aria-label="Прочее">Прочее</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="menu-mobile invisible">
+                <div class="menu-mobile__title">
+                    <div class="logo menu-mobile__logo">
+                        <a class="logo__link" href="index.html" title="Foxboost.ru - главная страница">
+                            <img class="logo__image" src="../../images/logo.svg" alt="FoxGear Logo" />
+                        </a>
+                    </div>
+                </div>
+                <ul class="menu-mobile__items">
+                    <li class="menu-mobile__item menu-mobile__item_strong">
+                        <a class="link menu-mobile__link menu-mobile__link_strong" href="#" title="Фоксбусты на компьютерные столы">
+                            Компьютерные столы
+                        </a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="link menu-mobile__link" href="category.html" title="Фоксбусты на кресла">Кресла</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="link menu-mobile__link" href="category.html" title="Фоксбусты на клавиатуры">Клавиатуры</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="link menu-mobile__link" href="category.html" title="Фоксбусты на столики">Столики</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="link menu-mobile__link" href="category.html" title="Фоксбусты на аксессуары">Аксессуары</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="link menu-mobile__link" href="category.html" title="Прочие фоксбусты">Прочие</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="link menu-mobile__link menu-mobile__link_strong" href="#" title="О Фоксбусте">Как это работает</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="link menu-mobile__link" href="#" title="Контакты">Контакты</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="link menu-mobile__link" href="#" title="Написать сообщение">Обратная связь</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <main class="main">
+            <div class="wrapper">
+                <section class="section">
+                    <h2 class="title">Панель управления</h2>
+                    <div class="panel">
+                        <div class="panel__title">Общая статистика</div>
+                        <div class="panel__content"></div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel__title panel__title_border-bottom">Заявки по фоксбустам</div>
+                        <div class="panel__content"></div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="wrapper footer__wrapper">
+                <div class="footer__content">
+                    <div class="logo footer__logo">
+                        <a class="logo__link" href="index.html" tabindex="-1">
+                            <img src="images/logo-text.webp" alt="Компания" class="logo__image" title="На главную страницу" />
+                        </a>
+                    </div>
+                    <div class="footer__menu">
+                        <div class="footer__menu-column">
+                            <div class="footer__menu-title">Фоксбусты</div>
+                            <ul class="footer__menu-items">
+                                <li class="footer__menu-item">
+                                    <a class="link link_light" href="category.html" title="Фоксбусты компьютерных столов">
+                                        Компьютерные столы
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="link link_light" href="category.html" title="Фоксбусты кресел">Кресла</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="link link_light" href="category.html" title="Фоксбусты клавиатур">Клавиатуры</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="link link_light" href="category.html" title="Фоксбусты столиков">Столики</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="link link_light" href="category.html" title="Фоксбусты аксессуаров">Аксессуары</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="link link_light" href="category.html" title="Прочие фоксбусты">Прочее</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__menu-column">
+                            <div class="footer__menu-title">Поддержка</div>
+                            <ul class="footer__menu-items">
+                                <li class="footer__menu-item">
+                                    <a class="link link_light" href="#" title="О сайте Foxboost.ru">Как это работает</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="link link_light" href="mailto:foxboost@mail.ru" title="Написать нам e-mail">
+                                        foxboost@mail.ru
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__legal">
+                    <div class="footer__copyright">&copy; ООО &ldquo;ФОКСГЕЙМЕР&rdquo;, 2025</div>
+                    <div class="footer__disclamer">
+                        Посещая сайт foxboost.ru, вы предоставляете согласие на обработку данных о посещении вами сайта foxboost.ru, сбор
+                        которых автоматически осуществляется на условиях 
+                        <a class="link footer__link link_light" href="#" title="Ознакомиться с политикой конфиденциальности">
+                            Политика конфиденциальности
+                        </a>
+                        .
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="loader hidden"></div>
+        <div class="popup hidden" id="popup-order">
+            <h2 class="title popup__title">Оставить заявку</h2>
+            <p class="popup__product">Кресло FoxGear model X</p>
+            <p class="popup__text">
+                Оставьте заявку на этот фоксбуст.
+                <br />
+                Вы получите уведомление на указанный e-mail о начале продаж.
+            </p>
+            <form class="form popup__form">
+                <input class="input popup__input" name="name" placeholder="Ваше имя" />
+                <input class="input popup__input" name="email" placeholder="E-mail" />
+                <input class="input popup__input" name="tel" placeholder="Телефон" />
+                <input class="input popup__input" name="promocode" placeholder="Промокод (при наличии)" />
+                <input type="hidden" name="product" />
+                <input class="button popup__button" type="submit" value="Создать заявку" />
+                <div class="popup__offer">
+                    Нажимая кнопку Отправить вы соглашаетесь с условиями
+                    <a class="link popup__link" href="#" title="Текст публичной оферты" target="_blank">Пользовательского соглашения</a>
+                    и даёте разрешение направлять вам информационную рассылку на указанный выше e-mail. Вы всегда сможете от нее отписаться.
+                </div>
+            </form>
+            <div class="popup__close"></div>
+        </div>
+        <div class="popup hidden" id="popup-success">
+            <h2 class="title popup__title">Заявка оформлена</h2>
+            <p class="popup__text">
+                Поздравляем!
+                <br />
+                <br />
+                Вы подписались на информационную рассылку. При поступлении в продажу данного товара вы получите уведомление на указанный
+                вами e-mail.
+                <br />
+                <br />
+                Благодарим за проявленный интерес!
+            </p>
+            <input class="button popup__button button_close" type="button" value="Закрыть" />
+            <div class="popup__close"></div>
+        </div>
+        <div class="popup hidden" id="popup-failed">
+            <h2 class="title popup__title">Заявка не отправлена</h2>
+            <p class="popup__text">
+                К сожалению, вашу заявку отправить не удалось.
+                <br />
+                <br />
+                Но мы знаем о проблеме, и совсем скоро её устраним. Попробуйте ещё раз отправить обращение позже.
+                <br />
+                <br />
+                Просим прощения за доставленные неудобства.
+            </p>
+            <input class="button popup__button button_close" type="button" value="Закрыть" />
+            <div class="popup__close"></div>
+        </div>
+        <div class="popup hidden" id="popup-unsubscribe">
+            <h2 class="title popup__title">Отписка от рассылки</h2>
+            <p class="popup__text">
+                Вы успешно отписались от информационной рассылки.Теперь вы не будете получать уведомления о новых товарах, поступивших в
+                продажу.
+                <br />
+                <br />
+                Чтобы вновь получать уведомления создайте заявку на заинтересовавший вас товар.
+            </p>
+            <input class="button popup__button button_close" type="button" value="Закрыть" />
+            <div class="popup__close"></div>
+        </div>
+        <div class="popup hidden" id="popup-feedback">
+            <h2 class="title popup__title">Успешно отправлено</h2>
+            <p class="popup__text">
+                Ваш вопрос или предложение успешно отправлено.
+                <br />
+                <br />
+                После ознакомления при необходимости администратор проекта свяжется с вами по указанным вами контактным данным.
+                <br />
+                <br />
+                Благодарим за проявленный интерес!
+            </p>
+            <input class="button popup__button button_close" type="button" value="Закрыть" />
+            <div class="popup__close"></div>
+        </div>
+
+        <div class="overlay hidden"></div>
+
+        <div class="back-to-top invisible">
+            <svg
+                width="35px"
+                height="35px"
+                role="button"
+                aria-label="Наверх"
+                version="1.1"
+                viewBox="0 0 32 32"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+                <path
+                    d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z"
+                ></path>
+            </svg>
+        </div>
+
+        <script src="scripts/util/jquery-3.7.1.min.js"></script>
+        <script src="scripts/util/owl.carousel.min.js"></script>
+        <script src="scripts/menu-mobile.js"></script>
+        <script src="scripts/slider-hero.js"></script>
+        <script src="scripts/section-foxboost.js"></script>
+        <script src="scripts/section-ambassador.js"></script>
+        <script src="scripts/popup.js" type="module"></script>
+        <script src="scripts/popup-subscribe.js" type="module"></script>
+    </body>
+</html>
